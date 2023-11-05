@@ -7,6 +7,7 @@ $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, 'https://api.uptimerobot.com/v2/getMonitors?api_key='.$api_key);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_POST, true);
+curl_setopt($ch, CURLOPT_POSTFIELDS, '');
 $result = curl_exec($ch);
 curl_close($ch);
 
